@@ -1,0 +1,31 @@
+.about{
+    padding: 5em;
+}
+.about__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about__box__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 50px;
+    background: #AD8B73;
+    margin: 2em 0;
+   padding: 2em;
+}
+.about__box__content__img{
+    width: 100%;
+    height: 50%;
+    border-radius: 50px;
+}
+.about__box__content__img img{
+    width: 100%;
+    height: 50%;
+    border-radius: 50px;
+}
