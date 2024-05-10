@@ -13,6 +13,7 @@
      align-items: center;
      justify-content: center;
      flex-direction: row;
+     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
 }
 .header__box{
@@ -62,6 +63,7 @@
     border-radius: 50px;
     z-index: 5;
     opacity: 1;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     transition: 0.3s all;
 }
 .header__box__card img{

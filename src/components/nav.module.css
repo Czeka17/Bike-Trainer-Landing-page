@@ -12,6 +12,7 @@
     width: 100%;
     max-width: 1200px;
     background: #947763;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 50px;
 }
 .nav__list{
