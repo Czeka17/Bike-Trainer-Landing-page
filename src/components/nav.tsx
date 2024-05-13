@@ -8,10 +8,10 @@ function Nav(){
             <div><a>Logo</a></div>
             <div>
                 <ul className={styles.nav__list}>
-                    <li><a>Home</a></li>
-                    <li><a>O mnie</a></li>
-                    <li><a>Sociale</a></li>
-                    <li><a>Blog</a></li>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#about'>O mnie</a></li>
+                    <li><a href='#blog'>Blog</a></li>
+                    <li><a href='#socials'>Sociale</a></li>
                 </ul>
             </div>
         </div>

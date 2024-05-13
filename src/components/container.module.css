@@ -1,0 +1,28 @@
+.layout{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    font-size: 2.5rem;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container__box{
+    position: relative;
+    margin: 2em 0;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: rgb(173,139,115);
+    background: linear-gradient(114deg, rgba(173,139,115,1) 27%, rgba(187,145,115,1) 56%);
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}

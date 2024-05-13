@@ -1,25 +1,19 @@
 .about{
-    padding: 5em;
-}
-.about__box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 5em 1em;
 }
 .about__box__content{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    border-radius: 50px;
-    background: #AD8B73;
+    flex-direction: column;
     margin: 2em 0;
    padding: 2em;
 }
+.about__box__content p{
+    order: 1;
+}
 .about__box__content__img{
+    order: 0;
     width: 100%;
     height: 50%;
     border-radius: 50px;
@@ -28,4 +22,15 @@
     width: 100%;
     height: 50%;
     border-radius: 50px;
+}
+@media(min-width:992px){
+    .about{
+        padding: 5em;
+    }
+    .about__box__content{
+        flex-direction: row;
+    }
+    .about__box__content__img{
+        order: 1;
+    }
 }
