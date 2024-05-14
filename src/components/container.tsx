@@ -7,11 +7,9 @@ interface ContainerProps{
 }
 
 function Container({children,title}:ContainerProps){
-    return <div className={styles.layout}>
-        {title && <h2 className={styles.title}>{title}</h2>}
-        <div className={styles.container}>
+    return <div className={styles.container}>
         <div className={styles.container__box}>{children}</div>
     </div>
-    </div>
+   
 }
 export default Container

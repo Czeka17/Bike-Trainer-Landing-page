@@ -1,7 +1,6 @@
 .nav{
     position: fixed;
     width: 100%;
-    margin: 0.25em 0;
     z-index: 10000;
 }
 .nav__container{
@@ -13,7 +12,8 @@
     max-width: 1200px;
     background: #947763;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    border-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 .nav__list{
     width: 100%;

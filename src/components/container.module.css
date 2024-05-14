@@ -21,8 +21,7 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    background: rgb(173,139,115);
-    background: linear-gradient(114deg, rgba(173,139,115,1) 27%, rgba(187,145,115,1) 56%);
-    z-index: 0;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background: linear-gradient(114deg, #947763,#AD8B73, #c1ab8b);
+
 }
+

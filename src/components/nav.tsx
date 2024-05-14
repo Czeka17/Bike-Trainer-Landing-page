@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './nav.module.css'
 
 function Nav(){
@@ -8,10 +9,10 @@ function Nav(){
             <div><a>Logo</a></div>
             <div>
                 <ul className={styles.nav__list}>
-                    <li><a href='#home'>Home</a></li>
-                    <li><a href='#about'>O mnie</a></li>
-                    <li><a href='#blog'>Blog</a></li>
-                    <li><a href='#socials'>Sociale</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>O mnie</Link></li>
+                    <li><Link to='/blog'>Blog</Link></li>
+                    <li><Link to='/socials'>Sociale</Link></li>
                 </ul>
             </div>
         </div>

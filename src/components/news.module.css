@@ -43,6 +43,19 @@
     flex-direction: column;
     background: rgba(173, 139, 115, 0.7);
 }
+.news__button{
+    padding: 1em 2em;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.news__button a{
+    text-decoration: none;
+    color: white;
+}
+.news__button:hover{
+    background-color: white;
+}
 @media(min-width:992px){
     .news{
         padding: 5em;

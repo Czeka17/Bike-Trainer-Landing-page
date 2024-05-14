@@ -1,5 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import { createClient } from 'contentful';
 import './App.css';
@@ -9,6 +8,7 @@ import Socials from './components/socials';
 import News from './components/news';
 import Nav from './components/nav';
 import Footer from './components/footer';
+import NewsItem from './components/newsItem';
 
 function App() {
   const [blogPosts,setBlogPosts] = useState([])
@@ -30,13 +30,23 @@ function App() {
     },[])
   return (
     <div className="App">
-      <div style={{maxWidth:'1200px', margin:"0 auto"}}><Nav/></div>
-      <Header/>
-      <About/>
-      <News blogPosts={blogPosts}/>
-      <Socials/>
-      <Footer/>
-    </div>
+            <Router>
+            <div style={{maxWidth:'1200px', margin:"0 auto"}}><Nav/></div>
+                <Routes>
+
+                    <Route path="/about" element={<About />}/>
+                    <Route path="/blog/:id" element={<NewsItem/>} />
+                  
+                    <Route path="/blog" element={<News blogPosts={blogPosts} />}/>
+                      
+                   
+                    <Route path="/socials" element={<Socials/>}/>
+                    
+                    <Route path="/" element={<Header/>}/>
+
+                </Routes>
+            </Router>
+        </div>
   );
 }
 

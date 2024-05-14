@@ -11,6 +11,8 @@
 }
 .about__box__content p{
     order: 1;
+    padding: 2em;
+    text-align: left;
 }
 .about__box__content__img{
     order: 0;

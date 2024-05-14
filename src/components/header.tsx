@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./header.module.css";
 import Container from "./container";
-import animation from "../assets/Animation.json";
 function Header() {
 	const [activeCards, setActiveCards] = useState([
 		"",
@@ -35,12 +34,13 @@ function Header() {
 		>
 			<Container>
 				<div className={styles.header__box}>
+					
 					<div className={styles["header__box-left"]}>
 						<h1 className={styles.header__box__title}>
 							Konrad Czekański <br /> Trener Personalny
 						</h1>
-						<a href='#about'>
-							<button className={styles.header__box__button}>Załóż kask</button>
+						<a href='/about'>
+							<button className={styles.header__box__button}><span  className={styles['header__box__button-content']}>Załóż kask</span></button>
 						</a>
 					</div>
 					<div className={styles["header__box-right"]}>
