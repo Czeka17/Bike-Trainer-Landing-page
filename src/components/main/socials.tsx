@@ -1,4 +1,4 @@
-import Container from "./shared/container";
+import Container from "../shared/container";
 import styles from "./socials.module.css";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -13,7 +13,9 @@ function Socials() {
 							color='	#2c26e1'
 						/>
 					</div>
-					<div className={styles["socials__box__card-instagram"]}>
+					<div
+						className={`${styles.socials__box__card} ${styles["socials__box__card-instagram"]}`}
+					>
 						<FaInstagram
 							size={58}
 							color='#E1306C'

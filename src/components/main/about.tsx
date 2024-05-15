@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import Container from "./shared/container";
+import Container from "../shared/container";
 function About() {
 	return (
 		<section

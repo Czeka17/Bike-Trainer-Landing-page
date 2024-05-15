@@ -1,8 +1,8 @@
-import Header from "../header";
-import About from "../about";
+import Header from "../main/header";
+import About from "../main/about";
 import News from "../blog/news";
-import Socials from "../socials";
-import Contact from "../contact";
+import Socials from "../main/socials";
+import Contact from "../contact/contact";
 function Home({ blogPosts }: any) {
 	return (
 		<main>

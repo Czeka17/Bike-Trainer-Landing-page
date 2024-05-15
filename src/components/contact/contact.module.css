@@ -12,7 +12,7 @@ hr {
 .contact__box {
 	display: flex;
 	flex-direction: row;
-	padding: 2em 1em;
+	padding: 1em 4em;
 }
 form {
 	width: 100%;
@@ -54,7 +54,7 @@ form {
 	transition: 0.5s;
 	color: white;
 }
-.formInputTop{
+.form__input__top{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -80,7 +80,7 @@ form {
  .form__input__box textarea:focus~span{
                 opacity: 0;		
 }
-.formButton {
+.form__button {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -88,7 +88,7 @@ form {
 	padding: 1em;
 	padding-right: 0;
 }
-.formButton button{
+.form__button button{
 	border-radius: 10px;
 	padding: 1em 2em;
 	background-color: transparent;
@@ -99,21 +99,8 @@ form {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.formButton button:hover{
+.form__button button:hover{
 	background: #AD8B73;
-}
-.imgBox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40%;
-	height: 100%;
-	display: none;
-}
-.imgBox iframe {
-	border: none;
-	width: 100%;
-	height: 100%;
 }
 
 @media (min-width:992px){
@@ -122,10 +109,10 @@ form {
     }
 }
 @media(min-width:576px){
-	.formInputTop{
+	.form__input__top{
 		flex-direction: row;
 	}
-	.formButton{
+	.form__button{
 		padding: 0;
 	}
 }

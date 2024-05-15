@@ -27,7 +27,7 @@ function Nav() {
 								<a href='#blog'>Blog</a>
 							</li>
 							<li>
-                            <a href='#contact'>Sociale</a>
+                            <a href='#contact'>Kontakt</a>
 							</li>
 						</ul>}
 				</div>

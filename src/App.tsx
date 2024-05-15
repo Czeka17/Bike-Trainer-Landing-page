@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { createClient } from "contentful";
 import "./App.css";
-import Header from "./components/header";
-import About from "./components/about";
-import Socials from "./components/socials";
+import Header from "./components/main/header";
+import About from "./components/main/about";
+import Socials from "./components/main/socials";
 import News from "./components/blog/news";
 import Nav from "./components/shared/nav";
 import Footer from "./components/shared/footer";
@@ -35,7 +35,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
-				<div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+				<div className='navBox'>
 					<Nav />
 				</div>
 				<Routes>
@@ -48,7 +48,7 @@ function App() {
 						element={<Home blogPosts={blogPosts} />}
 					/>
 				</Routes>
-                <Footer/>
+				<Footer />
 			</Router>
 		</div>
 	);

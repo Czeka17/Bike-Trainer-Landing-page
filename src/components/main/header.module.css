@@ -20,14 +20,6 @@
     flex-direction: column;
     z-index: 5;
 }
-.header__box-right{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .header__box__title{
     color: white;
     font-size: 3rem;
@@ -45,14 +37,7 @@
     z-index: 1;
     cursor: pointer;
 }
-.header__box__button-content{
-    position: relative;
-  z-index: 1;
-}
-.header__box__button:hover::before {
-    transform: scaleX(1);
-  }
-  
+
 .header__box__button::before {
     content: "";
     position: absolute;
@@ -70,6 +55,21 @@
     );
     transition: all 0.475s;
   }
+.header__box__button:hover::before {
+    transform: scaleX(1);
+  }
+  .header__box__button-content{
+    position: relative;
+  z-index: 1;
+}
+.header__box-right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header__box__card{
     position: absolute;
     top: 50%;

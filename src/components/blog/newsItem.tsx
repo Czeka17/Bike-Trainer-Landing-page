@@ -31,27 +31,17 @@ function NewsItem(){
     },[])
     const bodyTextContext = blogPost?.fields.bodyText.content;
 
-    // Tworzysz pusty string do przechowywania całej zawartości
     let contentText = '';
     
-    // Sprawdzasz, czy pole 0 istnieje i czy jest tablicą
-    if (bodyTextContext && bodyTextContext[0] && Array.isArray(bodyTextContext[0].content)) {
-        // Iterujesz przez każdy element content w polu 0
-        bodyTextContext[0].content.forEach((content:any )=> {
-            // Sprawdzasz typ węzła
-            if (content.nodeType === 'text') {
-                // Jeśli to tekst, dodajesz go do contentText
+    if (bodyTextContext && bodyTextContext[0] && Array.isArray(bodyTextContext[0].content)) { 
+        bodyTextContext[0].content.forEach((content:any )=> { 
+            if (content.nodeType === 'text') {      
                 contentText += content.value;
             } else if (content.nodeType === 'hyperlink') {
-                // Jeśli to hiperłącze, dodajesz tekst i link do contentText
                 contentText += `<a target="_blank" href="${content.data.uri}">${content.content[0].value}</a>`;
             }
         });
     }
-    
-    // Teraz masz zawartość z uwzględnionymi hiperłączami
-    console.log(contentText);
-
 
     return <div className={styles.newsItem}>
         {!isLoading && blogPost && <Container>

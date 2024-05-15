@@ -16,20 +16,15 @@
     height: 400px;
     border-radius: 50px;
     margin: 2em;
-    background-image: url('../../public/1.jpg');
+    background-image: url('../../../public/1.jpg');
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .socials__box__card-instagram{
-    position: relative;
-    width: 250px;
-    height: 400px;
-    margin: 2em;
-    border-radius: 50px;
-    background-image: url('../../public/3.jpg');
-    background-size: cover;
+    background-image: url('../../../public/3.jpg');
 }
 
-.socials__box__card::after,.socials__box__card-instagram::after{
+.socials__box__card::after{
     content: "";
     position: absolute;
     top: 0;
@@ -47,7 +42,7 @@
 .socials__box__card-instagram::after{
     background:#E1306C ;
     }
-.socials__box__card svg,.socials__box__card-instagram svg{
+.socials__box__card svg{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,10 +50,13 @@
     z-index: 10;
     transition: 0.3s transform;
 }
-.socials__box__card:hover::after, .socials__box__card-instagram:hover::after {
+.socials__box__card:hover::after {
     opacity: 0.5;
 }
-
+.socials__box__card:hover svg{
+    transform: translate(-50%,-50%) scale(1.1);
+    transition: transform 0.3s ease;
+}
 @media(min-width:992px){
     .socials{
         padding: 3em;

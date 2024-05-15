@@ -5,3 +5,7 @@
   min-height: 100vh;
  color: white;
 }
+.navBox{
+  max-width: 1200px;
+  margin: 0 auto;
+}

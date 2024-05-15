@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./header.module.css";
-import Container from "./shared/container";
+import Container from "../shared/container";
 function Header() {
 	const [activeCards, setActiveCards] = useState([
 		"",
