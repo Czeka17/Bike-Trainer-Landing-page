@@ -1,5 +1,5 @@
 .socials{
-    padding: 5em 1em;
+    padding: 3em 1em;
 }
 .socials__box__cardContainer{
     width: 100%;
@@ -61,7 +61,7 @@
 
 @media(min-width:992px){
     .socials{
-        padding: 5em;
+        padding: 3em;
     }
     .socials__box__cardContainer{
         flex-direction: row;

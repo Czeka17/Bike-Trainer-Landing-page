@@ -1,5 +1,5 @@
 .about{
-    padding: 5em 1em;
+    padding: 3em 1em;
 }
 .about__box__content{
     display: flex;
@@ -27,7 +27,7 @@
 }
 @media(min-width:992px){
     .about{
-        padding: 5em;
+        padding: 3em;
     }
     .about__box__content{
         flex-direction: row;

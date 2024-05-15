@@ -1,5 +1,5 @@
 .news{
-    padding: 5em 1em;
+    padding: 3em 1em;
 }
 .news__box{
     display: flex;
@@ -48,17 +48,21 @@
     background: transparent;
     border: 1px solid white;
     border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all;
 }
 .news__button a{
     text-decoration: none;
     color: white;
 }
 .news__button:hover{
+    color: black;
     background-color: white;
 }
 @media(min-width:992px){
     .news{
-        padding: 5em;
+        padding: 3em;
     }
     .news__box-item{
         width: 45%;

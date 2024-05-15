@@ -1,5 +1,5 @@
 import styles from "./news.module.css";
-import Container from "./container";
+import Container from "../shared/container";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 interface NewsProps {
@@ -8,22 +8,31 @@ interface NewsProps {
 function News({ blogPosts }: NewsProps) {
 	const memoizedBlogPosts = useMemo(() => {
 		return blogPosts?.map((post: any) => (
-			<div key={post.sys.id} className={styles["news__box-item"]}>
-				<img src={post.fields.image.fields.file.url} alt={post.fields.headline} />
+			<div
+				key={post.sys.id}
+				className={styles["news__box-item"]}
+			>
+				<img
+					src={post.fields.image.fields.file.url}
+					alt={post.fields.headline}
+				/>
 				<div className={styles["news__box-background"]}>
 					<p>{post.fields.headline}</p>
-					<Link to={`/blog/${post.sys.id}`}><button className={styles.news__button}>Czytaj</button></Link>
+					<Link to={`/blog/${post.sys.id}`}>
+						<button className={styles.news__button}>Czytaj</button>
+					</Link>
 				</div>
 			</div>
 		));
 	}, [blogPosts]);
 
 	return (
-		<section className={styles.news} id="blog">
+		<section
+			className={styles.news}
+			id='blog'
+		>
 			<Container title='Aktualności'>
-				<div className={styles.news__box}>
-					{memoizedBlogPosts}
-				</div>
+				<div className={styles.news__box}>{memoizedBlogPosts}</div>
 			</Container>
 		</section>
 	);

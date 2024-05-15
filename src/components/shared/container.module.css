@@ -3,7 +3,8 @@
     height: 100%;
 }
 .title{
-    font-size: 2.5rem;
+    color: white;
+    font-size: 2.6rem;
 }
 .container{
     display: flex;
@@ -15,8 +16,8 @@
     margin: 0 auto;
 }
 .container__box{
-    position: relative;
     margin: 2em 0;
+    position: relative;
     border-radius: 50px;
     overflow: hidden;
     height: 100%;
