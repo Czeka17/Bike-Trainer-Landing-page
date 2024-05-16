@@ -6,13 +6,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 2em 0;
-   padding: 2em;
 }
 .about__box__content p{
     order: 1;
     padding: 2em;
-    text-align: left;
+    text-align: center;
 }
 .about__box__content__img{
     order: 0;

@@ -16,9 +16,7 @@ function About() {
 						eligendi delectus vero ipsa iste inventore saepe, a quibusdam et
 						cupiditate!
 					</p>
-					<div className={styles.about__box__content__img}>
-						<img src='./1.jpg' />
-					</div>
+					
 				</div>
 			</Container>
 		</section>

@@ -10,7 +10,8 @@ import Nav from "./components/shared/nav";
 import Footer from "./components/shared/footer";
 import NewsItem from "./components/blog/newsItem";
 import Home from "./components/shared/Home";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
 	const [blogPosts, setBlogPosts] = useState([]);
 
@@ -32,12 +33,12 @@ function App() {
 		};
 		getAllEntries();
 	}, []);
+	useEffect(() => {
+		AOS.init();
+	  }, []);
 	return (
 		<div className='App'>
 			<Router>
-				<div className='navBox'>
-					<Nav />
-				</div>
 				<Routes>
 					<Route
 						path='/blog/:id'
@@ -50,6 +51,7 @@ function App() {
 				</Routes>
 				<Footer />
 			</Router>
+		
 		</div>
 	);
 }

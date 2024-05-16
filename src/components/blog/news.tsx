@@ -31,7 +31,8 @@ function News({ blogPosts }: NewsProps) {
 			className={styles.news}
 			id='blog'
 		>
-			<Container title='Aktualności'>
+			<Container title='Aktualności' data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
 				<div className={styles.news__box}>{memoizedBlogPosts}</div>
 			</Container>
 		</section>

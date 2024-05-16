@@ -5,6 +5,7 @@
 .title{
     color: white;
     font-size: 2.6rem;
+    text-transform: uppercase;
 }
 .container{
     display: flex;
@@ -22,7 +23,7 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    background: linear-gradient(114deg, #947763,#AD8B73, #c1ab8b);
+    color: white;
 
 }
 

@@ -1,9 +1,7 @@
 .App {
   text-align: center;
-  background: rgb(206,171,147);
-  background: linear-gradient(105deg, rgba(206,171,147,1) 19%, rgba(173, 139, 115,1) 81%);
-  min-height: 100vh;
- color: white;
+  background: #222831;
+  color: white;
 }
 .navBox{
   max-width: 1200px;

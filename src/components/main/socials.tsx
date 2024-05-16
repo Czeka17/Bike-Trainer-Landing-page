@@ -6,7 +6,8 @@ function Socials() {
 	return (
 		<section className={styles.socials}>
 			<Container title='Znajdziesz mnie tutaj'>
-				<div className={styles.socials__box__cardContainer}>
+				<div className={styles.socials__box__cardContainer} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
 					<div className={styles.socials__box__card}>
 						<FaFacebook
 							size={58}

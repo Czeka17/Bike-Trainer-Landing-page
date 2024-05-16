@@ -87,7 +87,8 @@ function Contact() {
 			id='contact'
 		>
 			<Container title='Kontakt'>
-				<div className={styles.contact__container}>
+				<div className={styles.contact__container} data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
 					<div>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
@@ -95,7 +96,7 @@ function Contact() {
 						</p>
 					</div>
 					<hr />
-					<div className={styles.contact__box}>
+					<div className={styles.contact__box} >
 						<form onSubmit={handleSubmit}>
 							<div className={styles.form__box}>
 								<div className={styles.form}>

@@ -11,10 +11,12 @@
     "@types/node": "^16.18.97",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
+    "aos": "^2.3.4",
     "contentful": "^10.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-intersection-observer": "^9.10.2",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
@@ -44,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7"
   }
 }

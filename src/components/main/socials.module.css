@@ -8,6 +8,8 @@
     justify-content: space-around;
     flex-direction: column;
     margin: 2em 0;
+    background-color: #393E46;
+    border-radius: 50px;
 
 }
 .socials__box__card{
