@@ -13,8 +13,8 @@ function App() {
 	const [blogPosts, setBlogPosts] = useState([]);
 
 	const client = createClient({
-		space: `${process.env.REACT_APP_SPACE}`,
-		accessToken: `${process.env.REACT_APP_ACCESS_TOKEN}`,
+		space: `${process.env.REACT__APP__SPACE}`,
+		accessToken: `${process.env.REACT__APP__ACCESS__TOKEN}`,
 	});
 
 	useEffect(() => {
