@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+document.title = 'Konrad Czekański';
+
+const metaDescription = document.createElement('meta');
+metaDescription.name = 'description';
+metaDescription.content = 'Strona trenera rowerowego, Konrada Czekańskiego';
+document.getElementsByTagName('head')[0].appendChild(metaDescription);
+const metaKeywords = document.createElement('meta');
+metaKeywords.name = 'keywords';
+metaKeywords.content = 'Konrad Czekański, Rower, trener, Baszyn, kolarstwo';
+document.getElementsByTagName('head')[0].appendChild(metaKeywords);
 root.render(
   <React.StrictMode>
 
