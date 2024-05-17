@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 interface NewsProps {
 	blogPosts: any[];
+	isBlogPage:boolean;
 }
-function News({ blogPosts }: NewsProps) {
+function News({ blogPosts,isBlogPage }: NewsProps) {
 	const memoizedBlogPosts = useMemo(() => {
 		return blogPosts?.map((post: any) => (
-			<div
-				key={post.sys.id}
-				className={styles["news__box-item"]}
-			>
+			<Link to={`/blog/${post.sys.id}`} key={post.sys.id}
+			className={styles["news__box-item"]}
+			data-aos="fade-up">
+			
 				<img
 					src={post.fields.image.fields.file.url}
 					alt={post.fields.headline}
@@ -22,7 +23,7 @@ function News({ blogPosts }: NewsProps) {
 						<button className={styles.news__button}>Czytaj</button>
 					</Link>
 				</div>
-			</div>
+			</Link>
 		));
 	}, [blogPosts]);
 
@@ -31,9 +32,11 @@ function News({ blogPosts }: NewsProps) {
 			className={styles.news}
 			id='blog'
 		>
-			<Container title='Aktualności' data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
-				<div className={styles.news__box}>{memoizedBlogPosts}</div>
+			<Container title='Aktualności' >
+				{isBlogPage && <Link to={"/"}><button className={styles.navigation__button}>Wróć do strony głównej</button></Link>}
+				<div data-aos="fade-up"
+			data-aos-anchor-placement="top-bottom" data-aos-delay="100" className={styles.news__box}>{memoizedBlogPosts}</div>
+			{!isBlogPage && <Link to={'/blog'}><button className={styles.blogposts__button}>ZOBACZ WSZYSTKIE POSTY</button></Link>}
 			</Container>
 		</section>
 	);

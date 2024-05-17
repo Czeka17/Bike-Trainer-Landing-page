@@ -8,7 +8,7 @@ function Home({ blogPosts }: any) {
 		<main>
 			<Header />
 			<About />
-			<News blogPosts={blogPosts} />
+			<News blogPosts={blogPosts} isBlogPage={false} />
 			<Contact />
 			<Socials />
 		</main>

@@ -31,8 +31,9 @@
           top:50%;
           left:50%;
           border-radius: 50px;
+          border: 1px solid #00ADB5;
           transform: translate(-50%,-50%);
-          background: #AD8B73;
+          background:#393E46;
           color: white;
           padding: 1em;
           text-align: center;
@@ -40,18 +41,19 @@
     .modal__content-text h3, .modal__content-text p{
         padding: 1em;
     }
-    button{
+    .modal__button{
         padding: 1em 2em;
         background: transparent;
-        border: 1px solid white;
-        color: white;
+        border: 1px solid #00ADB5;
+        color: #00ADB5;
         cursor: pointer;
         border-radius: 20px;
         font-weight: bold;
         transition: 0.3s all;
     }
-    button:hover{  
-            background: #CEAB93;
+    .modal__button:hover{  
+            background: #00ADB5;
+            color: #393E46;
     }
 
   @keyframes ModalSlide{

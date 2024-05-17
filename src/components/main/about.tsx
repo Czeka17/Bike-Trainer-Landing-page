@@ -8,6 +8,7 @@ function About() {
 		>
 			<Container title='O mnie'>
 				<div className={styles.about__box__content}>
+	
 					<p>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
 						magni enim repellendus quo commodi autem dolores temporibus, velit
@@ -16,7 +17,7 @@ function About() {
 						eligendi delectus vero ipsa iste inventore saepe, a quibusdam et
 						cupiditate!
 					</p>
-					
+					<iframe src="https://lottie.host/embed/86a2c040-9aab-40bb-a6e8-56b26a632c15/9kVb38Ry17.json"></iframe>
 				</div>
 			</Container>
 		</section>

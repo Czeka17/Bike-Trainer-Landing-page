@@ -12,7 +12,7 @@ function Modal({closeModal,title,message}:ModalProps){
         <div className={styles["modal__content-text"]}>
         <h3>{title}</h3>
         <p>{message}</p>
-        <button onClick={closeModal}>OK</button>
+        <button className={styles.modal__button} onClick={closeModal}>OK</button>
         </div>
           </div>
         </div>

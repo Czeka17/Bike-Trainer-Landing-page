@@ -87,7 +87,7 @@ function Contact() {
 			id='contact'
 		>
 			<Container title='Kontakt'>
-				<div className={styles.contact__container} data-aos="fade-up"
+				<div className={styles.contact__container} data-aos="fade-up" data-aos-offset="100"
      data-aos-anchor-placement="top-bottom">
 					<div>
 						<p>

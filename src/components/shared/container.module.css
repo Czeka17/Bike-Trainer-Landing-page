@@ -17,9 +17,8 @@
     margin: 0 auto;
 }
 .container__box{
-    margin: 2em 0;
+    padding: 1em;
     position: relative;
-    border-radius: 50px;
     overflow: hidden;
     height: 100%;
     width: 100%;
