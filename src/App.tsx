@@ -12,13 +12,15 @@ import ScrollToTop from "./components/shared/ScrollToTop";
 function App() {
 	const [blogPosts, setBlogPosts] = useState([]);
 
-	const client = createClient({
-		space: `${process.env.REACT_APP_SPACE}`,
-		accessToken: `${process.env.REACT_APP_ACCESS_TOKEN}`,
-	});
+	
 
 	useEffect(() => {
+		
 		const getAllEntries = async () => {
+			const client = createClient({
+				space: `${process.env.REACT_APP_SPACE}`,
+				accessToken: `${process.env.REACT_APP_ACCESS_TOKEN}`,
+			});
 			try {
 				await client.getEntries().then((entries: any) => {
 					console.log(entries);
