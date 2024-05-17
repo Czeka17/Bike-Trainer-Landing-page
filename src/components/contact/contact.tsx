@@ -91,8 +91,7 @@ function Contact() {
      data-aos-anchor-placement="top-bottom">
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-							cupiditate tenetur totam vero, molestiae culpa.
+						Jestem tu dla Ciebie!<br/> Wypełnij formularz kontaktowy poniżej, abym mógł Cię lepiej poznać i pomóc w osiągnięciu Twoich celów rowerowych.
 						</p>
 					</div>
 					<hr />
