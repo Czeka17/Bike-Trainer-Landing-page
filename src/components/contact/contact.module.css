@@ -16,7 +16,10 @@ hr {
 .contact__box {
 	display: flex;
 	flex-direction: row;
-	padding: 1em 4em;
+	padding: 1em 2em;
+}
+.contact__text{
+	padding: 1em;
 }
 form {
 	width: 100%;
@@ -112,6 +115,10 @@ form {
     .contact{
         padding: 3em;
     }
+	.contact__box {
+
+		padding: 1em 4em;
+	}
 }
 @media(min-width:576px){
 	.form__input__top{

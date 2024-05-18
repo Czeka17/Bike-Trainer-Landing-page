@@ -9,6 +9,7 @@ import Home from "./components/shared/Home";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from "./components/shared/ScrollToTop";
+import Nav from "./components/shared/nav";
 function App() {
 	const [blogPosts, setBlogPosts] = useState([]);
 
@@ -39,6 +40,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
+				<Nav/>
 				<ScrollToTop/>
 				<Routes>
 					<Route

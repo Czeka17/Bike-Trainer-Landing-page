@@ -1,5 +1,5 @@
 .newsItem{
-    padding:1em;
+    padding:3em 1em;
     min-height: 100vh;
 }
 .navigation__button{
@@ -43,7 +43,7 @@
 
 @media (min-width:992px){
     .newsItem{
-        padding: 3em;
+        padding: 5em;
     }
     .newsItem__box{
         flex-direction: row;

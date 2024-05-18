@@ -90,7 +90,7 @@ function Contact() {
 				<div className={styles.contact__container} data-aos="fade-up" data-aos-offset="100"
      data-aos-anchor-placement="top-bottom">
 					<div>
-						<p>
+						<p className={styles.contact__text}>
 						Jestem tu dla Ciebie!<br/> Wypełnij formularz kontaktowy poniżej, abym mógł Cię lepiej poznać i pomóc w osiągnięciu Twoich celów rowerowych.
 						</p>
 					</div>

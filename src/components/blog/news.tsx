@@ -35,7 +35,7 @@ function News({ blogPosts,isBlogPage }: NewsProps) {
 			<Container title='Aktualności' >
 				{isBlogPage && <Link to={"/"}><button className={styles.navigation__button}>Wróć do strony głównej</button></Link>}
 				<div data-aos="fade-up"
-			data-aos-anchor-placement="top-bottom" data-aos-delay="100" className={styles.news__box}>{memoizedBlogPosts}</div>
+			data-aos-anchor-placement="top-bottom"  className={styles.news__box}>{memoizedBlogPosts}</div>
 			{!isBlogPage && <Link to={'/blog'}><button className={styles.blogposts__button}>ZOBACZ WSZYSTKIE POSTY</button></Link>}
 			</Container>
 		</section>
