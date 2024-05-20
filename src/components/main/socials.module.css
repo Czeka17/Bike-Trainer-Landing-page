@@ -10,7 +10,7 @@
     margin: 2em 0;
     background-color: #393E46;
     border-radius: 50px;
-
+    border: 1px solid #00ADB5;
 }
 .socials__box__card{
     position: relative;

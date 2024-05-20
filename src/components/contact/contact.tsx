@@ -15,7 +15,6 @@ function Contact() {
 		message: "",
 	});
 	const [showModal, setShowModal] = useState(false);
-	const [canCloseModal, setCanCloseModal] = useState(false);
 	const [modalText, setModalText] = useState({ title: "Wysyłanie...", paragraph: "Proszę czekać" });
 
 	function closeModalHandler(){

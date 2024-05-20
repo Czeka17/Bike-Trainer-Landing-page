@@ -1,9 +1,5 @@
-
-import { Link } from "react-router-dom";
 import styles from "./header.module.css";
-import { FaRegNewspaper } from "react-icons/fa6";
-import Nav from "../shared/nav";
-import { useRef,useEffect } from "react";
+
 function Header() {
 
 	return (
@@ -13,7 +9,7 @@ function Header() {
 		>
 			  <div className={styles.container}>
 			  <div className={styles.background}></div>
-			  <video src={`${process.env.REACT_APP_VIDEOPATH}`}   className={styles.video} autoPlay loop muted playsInline>
+			  <video src={`${process.env.REACT_APP_VIDEOPATH}`}   className={styles.video} autoPlay loop muted >
       </video>
 				<div className={styles.title}>
 				<h1 data-aos="fade-up"

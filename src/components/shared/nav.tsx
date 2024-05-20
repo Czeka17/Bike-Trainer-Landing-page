@@ -52,10 +52,10 @@ function Nav() {
 				{isBlogPage ? 
 				<ul className={styles.nav__list__mobile}>
 				<li>
-					<a href='/' onClick={() => setOpen(false)}>Home</a>
+					<Link to='/' onClick={() => setOpen(false)}>Home</Link>
 				</li>
 				<li>
-					<a href='/blog'  onClick={() => setOpen(false)}>Blog</a>
+					<Link to='/blog'  onClick={() => setOpen(false)}>Blog</Link>
 				</li>
 			</ul>
 				:<ul className={styles.nav__list__mobile}>

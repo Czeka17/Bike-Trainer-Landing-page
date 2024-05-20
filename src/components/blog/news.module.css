@@ -92,6 +92,12 @@
     background: #00ADB5;
     color: #222831;
 }
+@media(min-width:576px){
+    .news__box{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px;
+    }
+}
 @media(min-width:992px){
     .news{
         padding: 3em;
