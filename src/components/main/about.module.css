@@ -10,6 +10,9 @@
 
 .about__box__content p{
     padding: 2em;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
     text-align: center;
 }
 .about__box__content iframe{

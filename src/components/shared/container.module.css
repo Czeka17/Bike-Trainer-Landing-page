@@ -4,7 +4,9 @@
 }
 .title{
     color: white;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-align: center;
     text-transform: uppercase;
 }
 .container{
@@ -26,3 +28,8 @@
 
 }
 
+@media(min-width:768px){
+    .title{
+        font-size: 2.6rem;
+    }
+}

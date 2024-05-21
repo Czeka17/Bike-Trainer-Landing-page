@@ -30,23 +30,34 @@ function NewsItem() {
         };
 
         getEntry();
-    }, [client, id]);
+    }, []);
 
     let contentText = '';
 
-    if (blogPost && blogPost.fields.bodyText) {
-        const bodyTextContext = blogPost.fields.bodyText.content;
+if (blogPost && blogPost.fields.bodyText) {
+    const bodyTextContext = blogPost.fields.bodyText.content;
 
-        if (bodyTextContext && bodyTextContext[0] && Array.isArray(bodyTextContext[0].content)) {
-            bodyTextContext[0].content.forEach((content: any) => {
-                if (content.nodeType === 'text') {
-                    contentText += content.value;
-                } else if (content.nodeType === 'hyperlink') {
-                    contentText += `<a target="_blank" href="${content.data.uri}">${content.content[0].value}</a>`;
+    if (bodyTextContext && bodyTextContext[0] && Array.isArray(bodyTextContext[0].content)) {
+        bodyTextContext[0].content.forEach((content: any) => {
+            if (content.nodeType === 'text') {
+                let textValue = content.value;
+
+                if (content.marks && Array.isArray(content.marks)) {
+                    content.marks.forEach((mark: any) => {
+                        if (mark.type === 'bold') {
+                            textValue = `<strong>${textValue}</strong>`;
+                        }
+                    });
                 }
-            });
-        }
+
+                contentText += textValue;
+            } else if (content.nodeType === 'hyperlink') {
+                contentText += `<a target="_blank" href="${content.data.uri}">${content.content[0].value}</a>`;
+            }
+        });
     }
+}
+
 
     return (
         <div className={styles.newsItem}>

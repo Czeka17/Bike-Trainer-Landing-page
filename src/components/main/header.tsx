@@ -13,7 +13,7 @@ function Header() {
       </video>
 				<div className={styles.title}>
 				<h1 data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">KONRAD CZEKAŃSKI <br/> TRENER ROWEROWY</h1>
+     data-aos-anchor-placement="top-bottom">KONRAD CZEKAŃSKI <br/> TRENER MOTORYCZNY</h1>
 				<a href="#about">
 				<button className={styles.button} data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-delay="300"><span className={styles.button__content}>ZAŁÓŻ KASK</span></button>

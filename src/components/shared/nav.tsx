@@ -36,6 +36,9 @@ function Nav() {
 							<li>
 								<a href='#contact'>Kontakt</a>
 							</li>
+							<li>
+								<a href='#socials'>Sociale</a>
+							</li>
 						</ul>
 					)}
 				</div>
@@ -70,6 +73,9 @@ function Nav() {
 							</li>
 							<li>
 								<a href='#contact'  onClick={() => setOpen(false)}>Kontakt</a>
+							</li>
+							<li>
+								<a href='#socials'  onClick={() => setOpen(false)}>Sociale</a>
 							</li>
 						</ul>}
 					</div>
