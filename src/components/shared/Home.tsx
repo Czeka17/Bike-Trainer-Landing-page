@@ -1,15 +1,17 @@
 import Header from "../main/header";
 import About from "../main/about";
-import News from "../blog/news";
 import Socials from "../main/socials";
 import Contact from "../contact/contact";
 import Group from "../main/group";
-function Home({ blogPosts }: any) {
+import Offer from "../main/offer";
+import QnA from "../main/qna";
+function Home() {
 	return (
 		<main>
 			<Header />
 			<About />
-			<News blogPosts={blogPosts} isBlogPage={false} />
+			<Offer/>
+			<QnA/>
 			<Contact />
 			<Group/>
 			<Socials />

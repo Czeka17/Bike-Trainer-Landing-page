@@ -3,7 +3,7 @@
     height: 100%;
 }
 .title{
-    color: white;
+    color: var(--text-color);;;
     font-size: 1.8rem;
     letter-spacing: 2px;
     text-align: center;
@@ -24,7 +24,7 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    color: white;
+    color: var(--text-color);;;
 
 }
 

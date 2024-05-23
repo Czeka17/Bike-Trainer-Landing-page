@@ -8,7 +8,7 @@ function Socials() {
 			<Container title='Znajdziesz mnie tutaj'>
 				<div className={styles.socials__box__cardContainer} data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-offset="100">
-			<a href="https://www.facebook.com/profile.php?id=61556006040616" target="_blank">
+			<a aria-label="Facebook link" href="https://www.facebook.com/profile.php?id=61556006040616" target="_blank">
 					<div className={styles.socials__box__card}>
 					
 						<FaFacebook
@@ -17,7 +17,7 @@ function Socials() {
 						/>
 					</div>
 					</a>
-					<a href="https://www.instagram.com/dlugi_na_rowerze?igsh=ZTZ6MWdsNGV3dHpy&utm_source=qr" target="_blank">
+					<a aria-label="Instagram link" href="https://www.instagram.com/dlugi_na_rowerze?igsh=ZTZ6MWdsNGV3dHpy&utm_source=qr" target="_blank">
 					<div
 						className={`${styles.socials__box__card} ${styles["socials__box__card-instagram"]}`}
 					>

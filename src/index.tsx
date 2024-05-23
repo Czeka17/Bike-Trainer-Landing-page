@@ -19,9 +19,7 @@ metaKeywords.content = 'Konrad Czekański, Rower, trener, Baszyn, kolarstwo';
 document.getElementsByTagName('head')[0].appendChild(metaKeywords);
 root.render(
   <React.StrictMode>
-
     <App />
-  
   </React.StrictMode>
 );
 

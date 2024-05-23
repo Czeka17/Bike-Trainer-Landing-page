@@ -1,0 +1,36 @@
+.QnA {
+    padding: 3em 1em;
+}
+
+.QnA__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    transition: all 0.3s;
+}
+
+.QnA__box-item {
+    width: 49%;
+    transition: all 0.3s;
+    border: 1px solid var(--text-color);
+    border-radius: 50px;
+    background-color: var(--accent-color);
+}
+
+.answer {
+    padding: 10px;
+    animation: slideDown 0.5s ease;
+}
+@keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

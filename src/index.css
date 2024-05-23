@@ -5,6 +5,13 @@ body,html{
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #ff0000;
+  --background-color:linear-gradient(114deg, rgba(140,6,6,1) 32%, rgba(124,3,3,1) 69%);;
+  --accent-color: #222222;
+  --text-color: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: Nunito, sans-serif;

@@ -14,9 +14,11 @@ function Header() {
 				<div className={styles.title}>
 				<h1 data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">KONRAD CZEKAŃSKI <br/> TRENER MOTORYCZNY</h1>
+	 <p data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-delay="150">Razem osiągniemy Twoje rowerowe cele. Spersonalizowane treningi motoryczne dla początkujących i zaawansowanych rowerzystów</p>
 				<a href="#about">
 				<button className={styles.button} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-delay="300"><span className={styles.button__content}>ZAŁÓŻ KASK</span></button>
+     data-aos-anchor-placement="top-bottom" data-aos-delay="300"><span className={styles.button__content}>POZNAJ MNIE</span></button>
 				</a>
 				</div>
 			  </div>

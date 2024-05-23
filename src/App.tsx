@@ -1,42 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { createClient } from "contentful";
+import { useEffect } from "react";
 import "./App.css";
-import News from "./components/blog/news";
 import Footer from "./components/shared/footer";
-import NewsItem from "./components/blog/newsItem";
 import Home from "./components/shared/Home";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from "./components/shared/ScrollToTop";
 import Nav from "./components/shared/nav";
 function App() {
-	const [blogPosts, setBlogPosts] = useState([]);
 
-	
 
-	useEffect(() => {
-		
-		const getAllEntries = async () => {
-			const client = createClient({
-				space: `${process.env.REACT_APP_SPACE}`,
-				accessToken: `${process.env.REACT_APP_ACCESS_TOKEN}`,
-			});
-			try {
-				await client.getEntries().then((entries: any) => {
-					console.log(entries);
-					setBlogPosts(entries.items);
-				});
-			} catch (error) {
-				console.log(error);
-			}
-		};
-		getAllEntries();
-	}, []);
 	useEffect(() => {
 		AOS.init();
 	  }, []);
-	  const firstFivePosts = blogPosts.slice(0, 5);
+
 	return (
 		<div className='App'>
 			<Router>
@@ -44,16 +21,8 @@ function App() {
 				<ScrollToTop/>
 				<Routes>
 					<Route
-						path='/blog/:id'
-						element={<NewsItem />}
-					/>
-					<Route
-						path='/blog'
-						element={<News isBlogPage={true} blogPosts={blogPosts} />}
-					/>
-					<Route
 						path='/'
-						element={<Home blogPosts={firstFivePosts} />}
+						element={<Home />}
 					/>
 					 <Route path='*' element={<div>
       <h1>404 - Page Not Found</h1>

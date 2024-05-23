@@ -8,9 +8,9 @@
     justify-content: space-around;
     flex-direction: column;
     margin: 2em 0;
-    background-color: #393E46;
+    background-color: var(--accent-color);;;
     border-radius: 50px;
-    border: 1px solid #00ADB5;
+    border: 1px solid var(--primary-color);;;
 }
 .socials__box__card{
     position: relative;
