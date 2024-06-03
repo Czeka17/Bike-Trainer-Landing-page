@@ -13,14 +13,28 @@
 }
 
 .QnA__box-item {
-    width: 49%;
+    width: 100%;
+    padding: 0.5em;
     transition: all 0.3s;
     border: 1px solid var(--text-color);
     border-radius: 50px;
     background-color: var(--accent-color);
+    cursor: pointer;
 }
-
+.QnA__box-itemCon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+.QnA__box-itemCon svg{
+  transition: all 0.3s;
+}
+.openSvg{
+  transform: rotate(180deg);
+}
 .answer {
+  text-align: left;
     padding: 10px;
     animation: slideDown 0.5s ease;
 }
@@ -32,5 +46,11 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @media(min-width:992px){
+    .QnA__box-item{
+      width: 45%;
     }
   }

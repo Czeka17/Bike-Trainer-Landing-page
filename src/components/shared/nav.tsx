@@ -20,6 +20,9 @@ function Nav() {
 							<li>
 								<a href='#about'>O mnie</a>
 							</li>
+							<li>
+								<a href='#offer'>Oferta</a>
+							</li>
 						
 							<li>
 								<a href='#contact'>Kontakt</a>
@@ -45,6 +48,9 @@ function Nav() {
 							</li>
 							<li>
 								<a href='#about'  onClick={() => setOpen(false)}>O mnie</a>
+							</li>
+							<li>
+								<a href='#offer'  onClick={() => setOpen(false)}>Oferta</a>
 							</li>
 					
 							<li>

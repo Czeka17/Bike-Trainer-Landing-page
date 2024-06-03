@@ -3,11 +3,23 @@
     height: 100%;
 }
 .title{
+    position: relative;
     color: var(--text-color);;;
     font-size: 1.8rem;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
+}
+.title::after{
+    position: absolute;
+    content: "";
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--text-color);
 }
 .container{
     display: flex;
@@ -21,12 +33,12 @@
 .container__box{
     padding: 1em;
     position: relative;
-    overflow: hidden;
     height: 100%;
     width: 100%;
     color: var(--text-color);;;
 
 }
+
 
 @media(min-width:768px){
     .title{
