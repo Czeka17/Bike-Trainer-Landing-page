@@ -9,7 +9,7 @@ const QnAData = [
         answer:"To plan treningowy ma być dostosowany do Ciebie a nie Ty do planu. Podczas konsultacji odpowiednio dobieram ilość godzin w tygodniu, którą możesz poświęcić na trening, biorąc pod uwagę Twój czas na pracę,czas dla siebie,rodziny czy innych spraw prywatnych. "
     },
     {
-        question:"Gdzie można się umówić na konsultacje ?",
+        question:"Gdzie można się umówić na konsultacje?",
         answer:"Jeśli zależy Ci na spotkaniu twarzą w twarz to po wcześniejszym umówieniu się jestem dostępny na MasterGym siłownia w Wińsku. "
     },
     {
@@ -17,7 +17,7 @@ const QnAData = [
         answer:"Zajmuje się rekreacyjnymi rowerzystami jak też kolarzami amatorami. Wiek nie ma tutaj znaczenia. Liczą się chęci współpracy."
     },
     {
-        question:"Czy potrzebuje miernika mocy, aby zacząć współpracę ? ",
+        question:"Czy potrzebuje miernika mocy, aby zacząć współpracę? ",
         answer:"Jeśli Twoim celem jest ściganie się to zdecydowanie przyda się miernik mocy. A jeśli chcesz po prostu zadbać o swoje zdrowie, to i z samym pulsometrem osiągniemy Twój cel"
     }
 ]

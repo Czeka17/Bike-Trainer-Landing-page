@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    border-top:1px solid var(--primary-color);; ;
-    border-bottom:1px solid var(--primary-color);; ;
+    border-top:1px solid var(--text-color);; ;
+    border-bottom:1px solid var(--text-color);; ;
 }
 .background{
     position: absolute;
@@ -52,7 +52,7 @@
     max-width: 800px;
 }
 .group__box button:hover{
-    background-color: var(--primary-color);;;
+    background-color: var(--accent-color);;;
 }
 .group__box p{
     font-size: 1.1rem;

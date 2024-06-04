@@ -31,7 +31,7 @@ function Offer() {
 										<li key={subIndex}>{item}</li>
 									))}
 								</ul>
-								<div>
+								<div className={styles.offer__container}>
 									<h3 className={styles.offer__price}>{offer.price}</h3>
 									{offer.available === true ?<a href="#offerDetails"><button className={styles.offer__button} onClick={() => moreInfoHandler(index)}>Więcej</button></a> : <button className={styles['offer__button-disabled']}>Wkrótce</button>}
 								</div>

@@ -8,8 +8,12 @@ body,html{
 :root {
   --primary-color: rgb(158, 6, 6);
   --background-color:#222222;
-  --accent-color:rgba(124,3,3,1);
+  --accent-color:rgb(96, 9, 9);
   --text-color: #ffffff;
+  line-height: 1.6;
+  letter-spacing: 1px;
+word-spacing: 1px;
+max-width: 100%;
 }
 ::-webkit-scrollbar {
   width: 10px;

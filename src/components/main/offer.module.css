@@ -30,12 +30,16 @@
     padding: 0.5em 0;
     text-align: left;
 }
+.offer__container{
+    width: 100%;
+}
 .offer__price, .offer__title{
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 .offer__button,.offer__button-disabled{
     padding: 1em 2em;
+    width: 50%;
     cursor: pointer;
     border-radius: 50px;
     background-color: transparent;
