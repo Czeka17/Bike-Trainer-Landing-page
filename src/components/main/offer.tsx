@@ -39,12 +39,14 @@ function Offer() {
 						);
 					})}
 				</div>
+			
 			</Container>
             <div className={styles.detailsContainer}>
                         {selectedOfferIndex !== null && <div>
                             <OfferDetails offer={Offers[selectedOfferIndex]} />
                         </div>}
             </div>
+			
 		</section>
 	);
 }

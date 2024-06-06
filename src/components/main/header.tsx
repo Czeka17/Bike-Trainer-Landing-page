@@ -17,8 +17,7 @@ function Header() {
 	 <p data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" data-aos-delay="150">Razem osiągniemy Twoje rowerowe cele. Spersonalizowane treningi motoryczne dla początkujących i zaawansowanych rowerzystów</p>
 				<a href="#about">
-				<button className={styles.button} data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom" data-aos-delay="300"><span className={styles.button__content}>POZNAJ MNIE</span></button>
+				<button className={styles.button} ><span className={styles.button__content}>POZNAJ MNIE</span></button>
 				</a>
 				</div>
 			  </div>

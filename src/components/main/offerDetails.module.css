@@ -1,6 +1,6 @@
 .offerDetails{
-    background-color: var(--background-color);
     color: var(--text-color);
+    background-color: var(--background-color);
     padding: 3em 1em;
     position: relative;
     border-top: 2px solid white;
@@ -14,14 +14,16 @@
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
-    gap: 1em;
+    gap: 2em;
     padding: 2em 0;
 }
 .OfferDetailsBoxItem{
     padding: 1em;
+    margin: 2em 0;
     background: var(--accent-color);
     border-radius: 50px;
     border: 1px solid var(--text-color);
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 10px 5px
 }
 .offerDetails__title{
     font-size: 1.5rem;
@@ -30,6 +32,7 @@
 .offerDetails__button{
     padding: 1em 2em;
     cursor: pointer;
+    width: 50%;
     border-radius: 50px;
     background-color: transparent;
     color: var(--text-color);
@@ -50,6 +53,16 @@
     background-color: var(--text-color);
     box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 10px 5px
 }
+
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 @media(min-width:992px){
     .offerDetailsBox{
 

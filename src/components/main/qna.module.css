@@ -20,6 +20,7 @@
     border-radius: 50px;
     background-color: var(--accent-color);
     cursor: pointer;
+    margin: 1em 0;
 
 }
 .QnA__box-itemCon{

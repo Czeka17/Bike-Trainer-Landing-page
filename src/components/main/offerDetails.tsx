@@ -25,8 +25,9 @@ function OfferDetails({ offer }: OfferDetailsProps) {
 	  });
     return (
         <>
-                    <div className={styles.animatedContainer} id="offerDetails">
-                       
+        
+                    <div id="offerDetails">
+                
                         <div className={styles.offerDetails} >
                       
                             <Container title={offer.title}>
@@ -48,10 +49,14 @@ function OfferDetails({ offer }: OfferDetailsProps) {
                 </div>
               </div>
               <div>
+              <p>Zainteresowała Cię oferta? Skontaktuj się ze mną poprzez formularz niżej lub napisz do mnie na social mediach aby rozpocząc współpracę!</p>
                <a href="#contact"> <button className={styles.offerDetails__button}>KONTAKT</button></a>
               </div>
             </animated.div>
           ))}
+          
+			
+			
                             </Container>
                         </div>
                     </div>

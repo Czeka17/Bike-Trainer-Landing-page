@@ -21,7 +21,7 @@ hr {
 .contact__text{
 	margin: 0 auto;
 	font-size: 1.1rem;
-	padding-bottom: 1em;
+	padding: 1em;
     line-height: 1.6;
     text-align: center;
 }
