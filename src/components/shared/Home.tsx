@@ -5,13 +5,13 @@ import Contact from "../contact/contact";
 import Group from "../main/group";
 import Offer from "../main/offer";
 import QnA from "../main/qna";
+
 function Home() {
 	return (
 		<main>
 			<Header />
 			<About />
 			<Offer/>
-			
 			<QnA/>
 			<Contact />
 			<Group/>
